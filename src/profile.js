@@ -99,7 +99,7 @@ function changeNickname(info) {
 	let tmpList = getCharacterData();
 
 	// check if the nickname exists
-	if (nicknameExist) {
+	if (nicknameExist(info)) {
 		return '{"err":225, "errmsg":"this nickname is already in use", "data":null}';
 	}
 
